@@ -27,8 +27,56 @@
 
   <section id="profile" class="section">
     <div class="sectionHead"><div><h2>Vendor Assessment Form</h2></div></div>
-    <div class="card"><div class="sectionHead"><div><h2>Official Microsoft Form Submission</h2><p>This is the only official submission form. Complete Sections 1 and 2 here, but do not submit or close it until Section 3 is complete.</p></div></div><div class="formFrame"><iframe title="Vendor Assessment Microsoft Form" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=uGG7-v46dU65NKR_eCuM12QXsmwHOhdKqE3t1HJLj_9UREpPNDM4TU44UTU0QkZMWjdUQTRGSDZKWS4u&embed=true" width="100%" height="980" marginwidth="0" marginheight="0" allowfullscreen>Loading Vendor Assessment form…</iframe></div><div class="actions"><a class="btnPrimary" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=uGG7-v46dU65NKR_eCuM12QXsmwHOhdKqE3t1HJLj_9UREpPNDM4TU44UTU0QkZMWjdUQTRGSDZKWS4u&embed=true" target="_blank" rel="noopener noreferrer">Open Vendor Assessment Form In New Tab</a></div></div>
-    <div class="twoCol" style="margin-top:20px"><div><div class="card"><div class="sectionHead"><div><h2>Assessment Scorecard And Hover Guidance</h2><p>Use the guidance and 1-5 ratings below to calculate the vendor’s average score and recommendation.</p></div></div><div class="notice"><b>Scoring standard:</b> Do not score higher than the evidence supports. A strong idea without proof should not receive a 5. Documented does not equal demonstrated.</div><div id="criteriaContainer"></div></div><div class="card" style="margin-top:20px"><div class="sectionHead"><div><h2>Return To Section 3 Of The Same Microsoft Form</h2><p>After scoring, go back to the Microsoft Form above and complete Section 3 with the calculated average, recommendation, and copied summary.</p></div></div><div class="calloutGreen"><b>Do not start a second form and do not close the original form.</b> Return to Section 3 of the same Microsoft Form, then paste the calculated average, recommendation, and score summary.</div><div class="actions"><button class="btnPrimary" type="button" onclick="copyAssessmentSummary()">Copy Average and Recommendation of Assessment Summary</button><a class="btnPrimary" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=uGG7-v46dU65NKR_eCuM12QXsmwHOhdKqE3t1HJLj_9UREpPNDM4TU44UTU0QkZMWjdUQTRGSDZKWS4u&embed=true" target="_blank" rel="noopener noreferrer">Reopen Same Form If Needed</a></div></div></div><aside class="card resultBox"><div class="sectionHead"><div><h2>Auto Assessment Helper</h2><p>Calculated from the 1-5 score selections.</p></div></div><div class="totalScore" id="totalScore">0.0</div><div class="recommendation" id="recommendation">Not yet scored</div><p class="recoText" id="recoText">Choose ratings below to generate an assessment.</p><p class="suggestedNext" id="suggestedNext">Suggested next step will appear here after all criteria are scored.</p><div class="scoreBreakdown" id="scoreBreakdown"></div><div class="actions"><button class="btnDanger" type="button" onclick="clearScoreSelections()">Clear Scores</button></div><div class="savedCard" id="savedCard"></div></aside></div>
+<div class="card">
+<div class="sectionHead">
+<div>
+<h2>Official Microsoft Form Submission</h2>
+<p>This is the only official submission form. Complete Sections 1 and 2 here, but do not submit or close it until Section 3 is complete.</p>
+</div>
+</div>
+
+<div class="formFrame">
+<iframe
+
+title="Vendor Assessment Microsoft Form"
+
+width="100%"
+
+height="980"
+
+src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=uGG7-v46dU65NKR_eCuM12QXsmwHOhdKqE3t1HJLj_9UREpPNDM4TU44UTU0QkZMWjdUQTRGSDZKWS4u&embed=true"
+
+frameborder="0"
+
+marginwidth="0"
+
+marginheight="0"
+
+style="border: none; max-width:100%; max-height:100vh"
+
+allowfullscreen
+
+webkitallowfullscreen
+
+mozallowfullscreen
+
+msallowfullscreen>
+
+Loading Vendor Assessment form…
+
+</iframe>
+
+</div>
+<div class="actions">
+<a
+class="btnPrimary"
+
+href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=uGG7-v46dU65NKR_eCuM12QXsmwHOhdKqE3t1HJLj_9UREpPNDM4TU44UTU0QkZMWjdUQTRGSDZKWS4u">
+Open Vendor Assessment Form
+</a>
+</div>
+
+</div>    <div class="twoCol" style="margin-top:20px"><div><div class="card"><div class="sectionHead"><div><h2>Assessment Scorecard And Hover Guidance</h2><p>Use the guidance and 1-5 ratings below to calculate the vendor’s average score and recommendation.</p></div></div><div class="notice"><b>Scoring standard:</b> Do not score higher than the evidence supports. A strong idea without proof should not receive a 5. Documented does not equal demonstrated.</div><div id="criteriaContainer"></div></div><div class="card" style="margin-top:20px"><div class="sectionHead"><div><h2>Return To Section 3 Of The Same Microsoft Form</h2><p>After scoring, go back to the Microsoft Form above and complete Section 3 with the calculated average, recommendation, and copied summary.</p></div></div><div class="calloutGreen"><b>Do not start a second form and do not close the original form.</b> Return to Section 3 of the same Microsoft Form, then paste the calculated average, recommendation, and score summary.</div><div class="actions"><button class="btnPrimary" type="button" onclick="copyAssessmentSummary()">Copy Average and Recommendation of Assessment Summary</button><a class="btnPrimary" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=uGG7-v46dU65NKR_eCuM12QXsmwHOhdKqE3t1HJLj_9UREpPNDM4TU44UTU0QkZMWjdUQTRGSDZKWS4u&embed=true" target="_blank" rel="noopener noreferrer">Reopen Same Form If Needed</a></div></div></div><aside class="card resultBox"><div class="sectionHead"><div><h2>Auto Assessment Helper</h2><p>Calculated from the 1-5 score selections.</p></div></div><div class="totalScore" id="totalScore">0.0</div><div class="recommendation" id="recommendation">Not yet scored</div><p class="recoText" id="recoText">Choose ratings below to generate an assessment.</p><p class="suggestedNext" id="suggestedNext">Suggested next step will appear here after all criteria are scored.</p><div class="scoreBreakdown" id="scoreBreakdown"></div><div class="actions"><button class="btnDanger" type="button" onclick="clearScoreSelections()">Clear Scores</button></div><div class="savedCard" id="savedCard"></div></aside></div>
   </section>
 
   <section id="referral" class="section"><div class="twoCol"><form id="referralForm" class="card" onsubmit="event.preventDefault();submitReferral();"><div class="sectionHead"><div><h2>Referral Form</h2><p>Use this when a vendor is outside AI and Automation scope, but may be better suited for another team.</p></div></div><div class="formGrid"><div class="formField"><label>Vendor Name</label><input id="refVendor" placeholder="Enter vendor name" /></div><div class="formField"><label>Vendor Contact(s)</label><input id="refContact" placeholder="Enter vendor contact information" /></div><div class="formField full"><label>Referral Reason</label><select id="refReasonType"><option value="" selected disabled>Select referral reason</option><option>Not AI/Automation Related</option><option>Better Fit For IT</option><option>Better Fit For Procurement</option><option>Better Fit For Operations</option><option>Better Fit For Data/Analytics</option><option>Duplicate Capability</option><option>Other</option></select></div><div class="formField full"><label>Reason Vendor Does Not Fit AI And Automation Scope</label><textarea id="refReason" placeholder="Explain why this vendor is not the right fit for the AI and Automation Team"></textarea></div><div class="formField"><label>Recommended Team Name</label><input id="refTeam" placeholder="Enter team name" /></div><div class="formField"><label>Recommended Team Email</label><input id="refEmail" type="email" placeholder="Enter team email address" /></div><div class="formField full"><label>Suggested Message</label><textarea id="refMessage" placeholder="Add context that should be sent to the recommended team"></textarea></div></div><div class="actions"><button class="btnPrimary" type="submit">Create Referral Email</button><button class="btnDanger" type="button" onclick="document.getElementById('referralForm').reset();hideReferralPreview();">Clear Referral Form</button></div><div class="savedCard" id="referralResult"></div></form><aside class="card"><div class="sectionHead"><div><h2>Email Draft Preview</h2><p>When Create Referral Email is selected, this draft appears and your default email app opens a prefilled email.</p></div></div><div id="inlineEmailPreview" class="emailPreview" style="display:none;margin-top:14px;"></div><div class="actions" id="emailPreviewActions" style="display:none"><a id="openEmailLink" class="btnPrimary" href="#">Open Email Draft</a><button type="button" class="btnSecondary" onclick="copyReferralDraft()">Copy Draft Text</button></div></aside></div></section>
